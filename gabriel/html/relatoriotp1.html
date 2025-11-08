@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Relatórios</title>
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+    <body>
+
+        <div class="container">
+            <div class="nav-link">
+                <a href="../index.html">Voltar à pagina inicial</a><br>
+            </div>
+
+            <h1>Relatório do Trabalho</h1>
+
+            <div class="report-content">
+                <p>
+                    Do dia 21/10 ao 23/10 começamos a fazer o trabalho, iniciando pelo entendimento do que se devia fazer, definindo as estruturas que trabalhariamos e construindo um protótipo de implementação do TAD Heap, apenas com as funções que já tinhamos visto em sala de aula e elementos básicos. Nessa fase ambos trabalharam com a mesma tarefa. Sobre parte que mais dificil dessa fase foi definir a estrutura do heap - com seus campos, nomes e acesso - da melhor forma possível para seguir bem durante o trabalho. Foi definido que fariámos uma struct para paciente, com um campo inteiro, representando a prioridade, e um campo char de 50 caracteres, representando o nome. Acreditamos que dessa forma o trabalho não ficaria tão complexo e abrangeria tudo que foi pedido.
+                </p>
+                <p>
+                    Do dia 24/10 ao 27/10 nós dois pensamos (cada um isoladamente, e depois juntamos nossas ideias) em como faríamos para implementar as funções novas do Heap, o AlteraHeap, RemoveHeap e ImprimeHeap, lidar com o desafio de manipular strings, que nunca tínhamos feitos, além de pensar em como estruturar o trabalho para o futuro.
+                </p>
+                <p>
+                    Primeiramente, para entender como faríamos para mexer com strings, aprendemos a utilizar a biblioteca “string.h” e suas funções. Depois de aprender, não foi difícil usar no decorrer do desenvolvimento do TAD, como na implementação da função Imprime, que é muito fácil de pensar conhecendo as funções da biblioteca.
+                </p>
+                <p>
+                    Sobre o RemoveHeap, o Arthur veio com a ideia que foi usada na implementação: o papel da função é remover o paciente com maior prioridade (primeiro), manter o heap e informar a enfermeira quem foi esse paciente que foi removido. Para conseguir remover o primeiro paciente e manter a prioridade, pensamos em colocar o último paciente do heap na primeira posição, violando o heap, e, logo em seguida, “sacudir o heap”, corrigindo o heap (pois a função sacode “desce” o paciente até a posição certa) e eliminando o primeiro paciente. Para informar a enfermeira chefe qual foi paciente removido, pensamos em alterar internamente na função um parâmetro “nome” recebido da função main, colocando nela a string do paciente removido ou o código de erro correspondente. Nessa parte, pensamos e testamos diversas formas de retornar erro ou o nome do paciente, retornando uma struct paciente ou um char (o que não seria tão bom pois teria que alocar espaço dinamicamente para eles, deixando o trabalho muito mais complexo”), mas vimos que dessa forma foi o melhor jeito que conseguimos.
+                </p>
+                <p>
+                    Sobre a função AlteraHeap, pensamos em infinitas formas de funcionamento e implementação: Recebendo status (piorou ou melhorou) e mudando a prioridade de acordo com ele ou “subindo ou descendo” o paciente no heap de acordo com o status também; Pensamos também em receber da enfermeira a nova prioridade
+                </p>
+            </div>
+        </div>
+        
+    </body>
+</html>
