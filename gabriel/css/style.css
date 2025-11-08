@@ -134,3 +134,21 @@ h1 {
     transform: translateY(-2px); 
     box-shadow: 0 4px 8px rgba(0,0,0,0.05);
 }
+
+.video-section {
+    margin-top: 30px; 
+    padding-top: 20px; 
+    border-top: 2px solid #e9ecef;
+}
+
+.video-section h2 {
+    margin-bottom: 20px; 
+    color: #343a40;
+}
+
+video {
+    display: block; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    background-color: #000; 
+}
